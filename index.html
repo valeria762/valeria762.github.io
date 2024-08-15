@@ -1,12 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>document</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
+
 <body>
-    <h1>titulo de prueba</h1>
-    <p>provando mi pagina de prueba</p>
-</body>
+  <header class="header">
+    <h1 class="titulo">CÓDIGO ENIGMA</h1>
+  </header>
+
+  <div container1>
+    <p>Mensaje Secreto</p>
+    <div class="presentacion">
+      <input type="text" class="mensaje" placeholder="Escribe o pega tu mensaje secreto aquí">
+    </div>
+    
+  </div>
+  <div class="clave">
+    <p>Clave Secreta</p>
+    <input type="number" placeholder="Ingresa tu clave secreta" class="clave-secreta">
+  </div>
+  <div class="botones">
+    <button class="boton" id="cifrar">Cifrar</button>
+    <button class="boton" id="descifrar">Descifrar</button>
+  </div>
+  <script src="script.js"></script>
+</body> 
+
 </html>
