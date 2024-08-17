@@ -1,4 +1,4 @@
-function cifrado(texto, desplasamiento){
+function descifrado_cifrado(texto, desplasamiento,accion){
     const abecedario = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let resultado = "";
 
@@ -9,14 +9,24 @@ function cifrado(texto, desplasamiento){
         if(indiceActual === -1){
             resultado += letraActual;
         }else{
-            let nuevoIndice =(indiceActual + desplazamiento)%abecedario.length;
+            let nuevoIndice
+            if (accion == 1){
+                nuevoIndice =(indiceActual + desplazamiento)%abecedario.length;
+            }else{
+                nuevoIndice =(indiceActual - desplazamiento)%abecedario.length;
+                if(nuevoIndice < 0){
+                    nuevoIndice += abecedario,length;
+                }
+            }
             resultado += abecedario[nuevoIndice];
         }
     }
     return resultado;
 }
-
-let textoOriginal ="Hola";
+/*
+let textoOriginal ="hola";
 let desplazamiento = 3;
-let textoCifrado = cifrado(textoOriginal, desplazamiento);
+let textoCifrado = descifrado_cifrado(textoOriginal, desplazamiento,1);
 console.log(textoCifrado);
+*/
+export default descifrado_cifrado;

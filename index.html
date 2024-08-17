@@ -1,35 +1,22 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>document</title>
   <link rel="stylesheet" href="CSS/style.css">
 </head>
-
 <body>
-  <header class="header">
-    <h1 class="titulo">CÓDIGO ENIGMA</h1>
-  </header>
+   <p>TITULO DE PRUEBA</p>
+   <p>Provando mi pagina de prueba</p>
+  <textarea name="mensaje" id="mensaje" maxlength="250" placeholder="escribe tu mensaje secreto"></textarea>
+  <input id="desplazamiento" type="number" placeholder="escribe el desplazamiento">
+  <button class="boton" id="cifrar">Cifrar</button>
+  <button class="boton" id="descifrar">Descifrar</button>
+  <div id="resultado">
 
-  <div container1>
-    <p>Mensaje Secreto</p>
-    <div class="presentacion">
-      <input type="text" class="mensaje" placeholder="Escribe o pega tu mensaje secreto aquí">
-    </div>
-    
   </div>
-  <div class="clave">
-    <p>Clave Secreta</p>
-    <input type="number" placeholder="Ingresa tu clave secreta" class="clave-secreta">
-  </div>
-  <div class="botones">
-    <button class="boton" id="cifrar">Cifrar</button>
-    <button class="boton" id="descifrar">Descifrar</button>
-  </div>
-  <script src="JS/script.js"></script>
-  <script src="JS/cifrado.js"></script>
+  <script src="JS/script.js" type="module"></script>
+  <script src="JS/cifrado.js" type="module"></script>
 </body> 
-
 </html>
