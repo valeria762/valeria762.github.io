@@ -1,0 +1,38 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+  .titulo{
+    color: black;
+    font-size: 40px;
+    margin:20px 0;
+    font-family: "monospace";
+  }
+  .header {
+    background-color: pink;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 6px, solid, black; 
+  }
+  p{
+    color: red;
+    font-size: 20px;
+    text-align: center;
+  }
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mensaje{
+    margin: auto;
+    width: 300px;
+    border: 2px solid black;
+}
+.mensaje2{
+    margin: auto;
+    width: 200px;
+    border: 2px solid blue;
+}

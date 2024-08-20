@@ -17,3 +17,16 @@ boton_cifrar.addEventListener("click",()=>{
         document.getElementById("resultado").innerHTML = texto;
      }
 })
+boton_descifrar .addEventListener("click",()=>{
+   if(mensaje.value == ""){
+      alert("ingresa tu mensaje ")
+   }else if(desplazamiento.value == ""){
+      alert("ingresa tu clave secreta")
+   }else{
+      let texto ="";
+      let textoCifrado = descifrado_cifrado(mensaje.value,desplazamiento.value,0);
+      texto += "El mensaje cifrado es: "
+      texto += textoCifrado;
+      document.getElementById("resultado").innerHTML = texto;
+   }
+})
