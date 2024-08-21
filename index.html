@@ -10,12 +10,20 @@
   <header class="header">
     <h1 class="titulo">CÓDIGO ENIGMA</h1>
   </header>
-
+   <div class="container">
    <p>Mensaje secreto</p>
-  <textarea name="mensaje" class="mensaje" id="mensaje" maxlength="250" placeholder="escribe tu mensaje secreto"></textarea>
-  <input id="desplazamiento" class="mensaje2"    ="number" placeholder="escribe el desplazamiento">
-  <button class="boton" id="cifrar">Cifrar</button>
-  <button class="boton" id="descifrar">Descifrar</button>
+   </div>
+  <textarea name="mensaje" class="mensaje" id="mensaje" maxlength="250" placeholder="Escribe tu mensaje secreto"></textarea>
+  <span id="counter">0/250</span>
+  <div class="container2">
+  <label for="offset">Clave secreta</label>
+  </div>
+  <input id="desplazamiento" class="mensaje2" type="number" placeholder="Ingresa tu clave secreta aqui">
+  <br>
+  <div class="botones">
+  <button class="boton1" id="cifrar">Cifrar</button>
+  <button class="boton2" id="descifrar">Descifrar</button>
+  </div>
   <div id="resultado">
 
   </div>
