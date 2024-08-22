@@ -7,26 +7,37 @@
   <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-  <header class="header">
-    <h1 class="titulo">CÓDIGO ENIGMA</h1>
-  </header>
-   <div class="container">
-   <p>Mensaje secreto</p>
-   </div>
-  <textarea name="mensaje" class="mensaje" id="mensaje" maxlength="250" placeholder="Escribe tu mensaje secreto"></textarea>
-  <span id="counter">0/250</span>
-  <div class="container2">
-  <label for="offset">Clave secreta</label>
+ 
+    <header class="header">
+      <h1 class="titulo">CÓDIGO ENIGMA</h1>
+    </header>
+    <div class="container">
+       <p>Mensaje secreto</p>
+    </div>
+       <textarea name="mensaje" class="mensaje" id="mensaje" maxlength="250" placeholder="Escribe tu mensaje secreto"></textarea>
+    <br>
+    <div class="container2">
+       <label for="offset">Clave secreta</label>
+    </div>
+    <input id="desplazamiento" class="mensaje2" type="number" placeholder="Ingresa tu clave secreta aqui">
+    
+    <br>
+    <div class="botones">
+       <button class="boton1" id="cifrar">Cifrar</button>
+       <button class="boton2" id="descifrar">Descifrar</button>
+    </div>
+    <div id="resultado"></div>
+    <div id="myModal" class="modal">
+      <div class="modalContenido">
+        <span class="close">&times;</span>
+      </div>
   </div>
-  <input id="desplazamiento" class="mensaje2" type="number" placeholder="Ingresa tu clave secreta aqui">
+  
   <br>
-  <div class="botones">
-  <button class="boton1" id="cifrar">Cifrar</button>
-  <button class="boton2" id="descifrar">Descifrar</button>
-  </div>
-  <div id="resultado">
-
-  </div>
+  
+  <footer>
+    <p>Todos los derechos reservados</p>
+  </footer>
   <script src="JS/script.js" type="module"></script>
   <script src="JS/cifrado.js" type="module"></script>
 </body> 
