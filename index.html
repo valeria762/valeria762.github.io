@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width">
   <title>document</title>
   <link rel="stylesheet" href="CSS/style.css">
+  <link href="/your-path-to-uicons/css/uicons-sr-lock.css"rel="stylesheet">
+  <link href="/your-path-to-uicons/css/uicons-sr-unlock.css" rel="stylesheet">
 </head>
 <body>
  
@@ -23,20 +25,18 @@
     
     <br>
     <div class="botones">
-       <button class="boton1" id="cifrar">Cifrar</button>
-       <button class="boton2" id="descifrar">Descifrar</button>
+       <button class="boton1" id="cifrar"><i class="fi fi-sr-lock"></i>Cifrar</button>
+       <button class="boton2" id="descifrar"> Descifrar</button>
+       <i class="fi fi-sr-unlock"></i>
     </div>
-    <div id="resultado"></div>
     <div id="myModal" class="modal">
       <div class="modalContenido">
         <span class="close">&times;</span>
+        <p class="mensajeContenido"></p>
       </div>
   </div>
-  
-  <br>
-  
   <footer>
-    <p>Todos los derechos reservados</p>
+    <p>© Todos los derechos reservados</p>
   </footer>
   <script src="JS/script.js" type="module"></script>
   <script src="JS/cifrado.js" type="module"></script>
